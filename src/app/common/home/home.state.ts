@@ -1,12 +1,12 @@
 import { StateProvider, StateDeclaration } from 'angular-ui-router';
 
-export const AuthConfig = ($stateProvider: StateProvider) =>
+export const HomeConfig = ($stateProvider: StateProvider) =>
     $stateProvider
-        .state("app.auth", {
-            parent: "app",
-            url: "/auth",
-            component: "erAuth"
+        .state('app.home', {
+            parent: 'app',
+            url: '/home',
+            component: 'igfgHome'
         } as StateDeclaration);
-AuthConfig.$inject = ["$stateProvider"];
+HomeConfig.$inject = ['$stateProvider'];
 
-export default AuthConfig;
+export default HomeConfig;

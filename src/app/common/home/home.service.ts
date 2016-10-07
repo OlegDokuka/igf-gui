@@ -1,30 +1,17 @@
-import { EvernoteClient as EvernoteClientService } from '../evernote';
-import { Evernote } from 'evernote';
 import { IQService, IPromise } from 'angular';
 
 
-export class AuthService {
-    static $inject = ["$q", "EvernoteClient"];
+export class HomeService {
+    static $inject = ['$q'];
 
-    constructor(private $q: IQService, private EvernoteClient: EvernoteClientService) {
+    constructor(private $q: IQService) {
     }
 
-    public login(credentials: { token: string }): IPromise<Evernote.User> {
-        const { EvernoteClient, $q } = this;
-
-        localStorage.setItem(EvernoteClientService.TOKEN_KEY, credentials.token);
-        EvernoteClient[EvernoteClientService.TOKEN_KEY] = credentials.token;
-
-        return $q((r, re) =>
-            this.EvernoteClient.getUserStore().getUser((e, p) => e ? re(e) : r(p))
-        );
-    }
-
-    public authorize(): IPromise<any> {
+    public proccess(): IPromise<any> {
         const { $q } = this;
 
-        return null;
+        return $q((r, re) => r() || re());
     }
 }
 
-export default AuthService; 
+export default HomeService; 

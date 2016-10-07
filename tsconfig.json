@@ -11,7 +11,9 @@
         "node_modules/**/typescript/*",
         "node_modules/**/tslint/*",
         "node_modules/**/awesome-typescript-loader/*",
-        "bower_components",
+        "node_modules/**/angular-ui-router/src/*",
+        "node_modules/**/angular/*",
+        "bower_components/*",
         "static/*"
     ]
 }

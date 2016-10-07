@@ -1,12 +1,12 @@
-import AuthService from './auth.service';
-import AuthState from './auth.state';
-import AuthComponent from './auth.component';
+import HomeService from './home.service';
+import HomeState from './home.state';
+import HomeComponent from './home.component';
 
-export const auth = angular
-    .module('Auth', [])
-    .service('AuthService', AuthService)
-    .component('erAuth', AuthComponent)
-    .config(AuthState)
+export const Home = angular
+    .module('Home', [])
+    .service('HomeService', HomeService)
+    .component('ifggHome', HomeComponent)
+    .config(HomeState)
     .name;
 
-export default auth;
+export default Home;

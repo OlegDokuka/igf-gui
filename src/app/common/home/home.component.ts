@@ -1,10 +1,10 @@
 import { IComponentOptions } from 'angular';
-import controller from './auth.controller';
-import * as template from './auth.template.html';
+import controller from './home.controller';
+import * as template from './home.template.html';
 
-export const AuthComponent: IComponentOptions = {
+export const homeComponent: IComponentOptions = {
     template,
     controller
 };
 
-export default AuthComponent;
+export default homeComponent;

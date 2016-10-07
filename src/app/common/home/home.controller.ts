@@ -1,18 +1,18 @@
 import { IComponentController } from 'angular';
 import { StateService } from 'angular-ui-router';
-import AuthServiceProvider from './auth.service';
+import HomeServiceProvider from './home.service';
 
-export class AuthController implements IComponentController {
-    static $inject = ["$state", "AuthService"];
+export class HomeController implements IComponentController {
+    static $inject = ['$state', 'HomeService'];
 
-    constructor(private $state: StateService, private AuthService: AuthServiceProvider) {
+    constructor(private $state: StateService, private HomeService: HomeServiceProvider) {
     }
 
-    public auth(credential) {
-        const { $state, AuthService } = this;
+    public prrocess(): void {
+        const { $state, HomeService } = this;
 
-        AuthService.login(credential).then(() => $state.go('/'));
+        // HomeService.login(credential).then(() => $state.go('/'));
     }
 }
 
-export default AuthController;
+export default HomeController;

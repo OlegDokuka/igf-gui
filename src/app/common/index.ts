@@ -1,12 +1,8 @@
-import Auth from './auth';
-import Evernote from './evernote';
-import Account from './account';
+import Home from './home';
 
 export const common = angular.
-    module("EvernoteReminder.Common", [
-        Evernote,
-        Account,
-        Auth
+    module('EvernoteReminder.Common', [
+        Home
     ])
     .name;
 

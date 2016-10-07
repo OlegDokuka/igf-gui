@@ -4,7 +4,7 @@
   "description": "Simple desktop application created to remind about uncomplited tasks in Evernote",
   "main": "index.js",
   "scripts": {
-    "1postinstall": "npm run typings && npm run tsc",
+    "postinstall": "npm run typings && npm run tsc",
     "typings": "./node_modules/.bin/typings i",
     "tsc": "./node_modules/.bin/tsc -p ./",
     "webpack:dev": "webpack --verbose --colors --display-error-details --config webpack/dev.config.js",
@@ -16,9 +16,6 @@
     "url": "git+https://github.com/OlegDokuka/EvernoteReminder.git"
   },
   "keywords": [
-    "Evernote",
-    "reminder",
-    "notification",
     "electron",
     "desktop"
   ],
@@ -40,7 +37,7 @@
   },
   "devDependencies": {
     "winston": "latest",
-    "typescript": "beta",
+    "typescript": "latest",
     "electron-prebuilt": "latest",
     "tslint": "latest",
     "tslint-loader": "latest",

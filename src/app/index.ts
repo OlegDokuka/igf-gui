@@ -1,5 +1,5 @@
-/// <reference path="../../typings/index.d.ts" />
-/// <reference path="../typings/index.d.ts" />
+/// <reference path='../../typings/index.d.ts' />
+/// <reference path='../typings/index.d.ts' />
 
 import * as angular from 'angular';
 import * as material from 'angular-material';
@@ -24,10 +24,10 @@ const root = angular
     Common,
     Components
   ])
-  .component('erApp', AppComponent)
+  .component('igfgApp', AppComponent)
   .config(AppState)
-  .run(["$state", ($state) => $state.go("app.auth")])
-  .name
+  .run(['$state', ($state) => $state.go('app.home')])
+  .name;
 
 
 export default root;
