@@ -6,38 +6,38 @@
   "scripts": {
     "postinstall": "npm run typings && npm run tsc",
     "typings": "./node_modules/.bin/typings i",
-    "tsc": "./node_modules/.bin/tsc -p ./",
-    "webpack:dev": "webpack --verbose --colors --display-error-details --config webpack/dev.config.js",
+    "tsc": "./node_modules/.bin/tsc",
+    "webpack:dev": "./node_modules/.bin/webpack --verbose --colors --display-error-details --config webpack/dev.config.js",
     "build:dev": "npm run webpack:dev",
     "build": "npm run build:dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OlegDokuka/EvernoteReminder.git"
+    "url": "git+https://github.com/OlegDokuka/igf-gui.git"
   },
   "keywords": [
-    "electron",
     "desktop"
   ],
   "author": "Oleh Dokuka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OlegDokuka/EvernoteReminder/issues"
+    "url": "https://github.com/OlegDokuka/igf-gui/issues"
   },
-  "homepage": "https://github.com/OlegDokuka/EvernoteReminder#readme",
+  "homepage": "https://github.com/OlegDokuka/igf-gui#readme",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-animate": "^1.5.8",
     "angular-aria": "^1.5.8",
     "angular-messages": "^1.5.8",
-    "angular-material": "^1.1.0-rc.5",
-    "angular-ui-router": "^1.0.0-alpha.5",
-    "jquery": "^3.1.0",
-    "lodash": "^4.14.0"
+    "angular-material": "^1.1.1",
+    "angular-ui-router": "^1.0.0-beta.3",
+    "jquery": "^3.1.1",
+    "lodash": "^4.16.4"
   },
   "devDependencies": {
     "winston": "latest",
     "typescript": "latest",
+    "typings": "latest",
     "electron-prebuilt": "latest",
     "tslint": "latest",
     "tslint-loader": "latest",

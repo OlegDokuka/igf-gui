@@ -9,6 +9,10 @@
     },
     "exclude": [
         "node_modules/**/typescript/*",
+        "node_modules/**/typings/*",
+        "node_modules/**/typings-core/*",
+        "node_modules/**/popsicle/*",
+        "node_modules/**/popsicle-retry/*",
         "node_modules/**/tslint/*",
         "node_modules/**/awesome-typescript-loader/*",
         "node_modules/**/angular-ui-router/src/*",
