@@ -42,6 +42,7 @@
     "tslint-loader": "latest",
     "awesome-typescript-loader": "latest",
     "style-loader": "latest",
+    "ng-annotate-loader": "latest",
     "css-loader": "latest",
     "json-loader": "latest",
     "raw-loader": "latest",

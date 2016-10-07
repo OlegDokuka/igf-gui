@@ -3,9 +3,9 @@ import { StateService } from 'angular-ui-router';
 import KPCREFServiceProvider from './kpcref.service';
 
 export class KPCREFController implements IComponentController {
-    static $inject = ['$state', 'KPCREFService'];
 
     constructor(private $state: StateService, private KPCREFService: KPCREFServiceProvider) {
+        'ngInject';
     }
 
     public process(): void {

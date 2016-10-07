@@ -2,9 +2,8 @@ import { IQService, IPromise } from 'angular';
 
 
 export class KPCREFService {
-    static $inject = ['$q'];
-
     constructor(private $q: IQService) {
+        'ngInject';
     }
 
     public process(): IPromise<any> {

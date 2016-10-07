@@ -7,6 +7,7 @@
     "angular-material": "registry:dt/angular-material#1.1.0-rc5.0+20160923175937",
     "jquery": "registry:dt/jquery#1.10.0+20160929162922",
     "lodash": "registry:dt/lodash#4.14.0+20161004174455",
-    "node": "registry:dt/node#6.0.0+20161006230116"
+    "node": "registry:dt/node#6.0.0+20161006230116",
+    "node-webkit": "registry:dt/node-webkit#0.0.0+20160726164208"
   }
 }

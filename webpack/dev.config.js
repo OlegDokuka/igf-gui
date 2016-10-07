@@ -15,7 +15,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.tsx?$/, loaders: ['awesome-typescript-loader', 'tslint'] },
+            { test: /\.tsx?$/, loaders: ['ng-annotate-loader', 'awesome-typescript-loader', 'tslint'] },
             { test: /\.css$/, loader: 'style-loader!css-loader' },
             { test: /\.html$/, exclude: /node_modules/, loader: 'html-loader' },
             { test: /\.json$/, loader: 'json-loader' }
@@ -31,7 +31,7 @@ module.exports = {
         ],
         extensions: ['', '.ts', '.tsx', '.js'],
         plugins: [
-            new TsConfigPathsPlugin(/* { tsconfig, compiler } */)
+            new TsConfigPathsPlugin()
         ]
     },
     tslint: {
