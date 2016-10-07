@@ -8,7 +8,7 @@ export class KPCREFController implements IComponentController {
     constructor(private $state: StateService, private KPCREFService: KPCREFServiceProvider) {
     }
 
-    public prrocess(): void {
+    public process(): void {
         const { $state, KPCREFService } = this;
 
         // KPCREFService.login(credential).then(() => $state.go('/'));
