@@ -4,12 +4,12 @@
   "description": "Simple desktop application created to remind about uncomplited tasks in Evernote",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run typings && npm run tsc",
+    "postinstall": "npm run typings && npm run build",
     "typings": "./node_modules/.bin/typings i",
     "tsc": "./node_modules/.bin/tsc",
     "webpack:dev": "./node_modules/.bin/webpack --verbose --colors --display-error-details --config webpack/dev.config.js",
     "build:dev": "npm run webpack:dev",
-    "build": "npm run build:dev"
+    "build": "npm run build:dev && npm run tsc"
   },
   "repository": {
     "type": "git",
