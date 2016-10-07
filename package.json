@@ -38,7 +38,6 @@
     "winston": "latest",
     "typescript": "latest",
     "typings": "latest",
-    "electron-prebuilt": "latest",
     "tslint": "latest",
     "tslint-loader": "latest",
     "awesome-typescript-loader": "latest",
