@@ -15,7 +15,7 @@ import 'angular-material/angular-material.css';
 
 
 const root = angular
-  .module('EvernoteReminder', [
+  .module('IGF-GUI', [
     material,
     messages,
     aria,

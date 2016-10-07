@@ -1,7 +1,7 @@
 import Home from './home';
 
 export const common = angular.
-    module('EvernoteReminder.Common', [
+    module('IGF-GUI.Common', [
         Home
     ])
     .name;

@@ -1,5 +1,5 @@
 export const components = angular.
-    module('EvernoteReminder.Components', [
+    module('IGF-GUI.Components', [
     ])
     .name;
 
