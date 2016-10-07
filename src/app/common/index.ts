@@ -1,8 +1,8 @@
-import Home from './home';
+import KPCREF from './kpcref';
 
 export const common = angular.
     module('IGF-GUI.Common', [
-        Home
+        KPCREF
     ])
     .name;
 

@@ -1,7 +1,7 @@
 import { IQService, IPromise } from 'angular';
 
 
-export class HomeService {
+export class KPCREFService {
     static $inject = ['$q'];
 
     constructor(private $q: IQService) {
@@ -14,4 +14,4 @@ export class HomeService {
     }
 }
 
-export default HomeService; 
+export default KPCREFService; 
