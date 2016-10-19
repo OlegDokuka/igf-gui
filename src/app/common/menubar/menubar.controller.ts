@@ -13,7 +13,7 @@ export class MenuBarController implements IComponentController {
         this.menu = new Menu({ type: 'menubar' });
 
         Window.get().menu = this.menu;
-        this.menu.append(new MenuItem({ label: "" }))
+        this.menu.append(new MenuItem({ label: 'test' }));
     }
 }
 
