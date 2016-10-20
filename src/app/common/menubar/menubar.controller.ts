@@ -11,9 +11,9 @@ export class MenuBarController implements IComponentController {
 
         this.current = $state.current.name;
         this.menu = new Menu({ type: 'menubar' });
+        this.menu.append(new MenuItem({ label: 'test' }));
 
         Window.get().menu = this.menu;
-        this.menu.append(new MenuItem({ label: 'test' }));
     }
 }
 
