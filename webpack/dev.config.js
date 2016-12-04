@@ -6,7 +6,7 @@ var TsConfigPathsPlugin = require('awesome-typescript-loader').TsConfigPathsPlug
 
 
 module.exports = {
-    target: 'electron',
+    target: 'node-webkit',
     entry: './src/app/index.ts',
     output: {
         path: assetsPath,

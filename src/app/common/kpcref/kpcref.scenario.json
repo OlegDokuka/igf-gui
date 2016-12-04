@@ -1,14 +1,14 @@
-[
-    [
+{
+    "test1": [
         "свободные атомы",
         "asdas",
         "asdasdas",
         "asdasda",
         "asdasda"
     ],
-    [
+    "test2": [
         "asdasd",
         "asdasd",
         "asdasd"
     ]
-]
+}

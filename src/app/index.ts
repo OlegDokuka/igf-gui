@@ -26,7 +26,7 @@ const root = angular
   ])
   .component('igfgApp', AppComponent)
   .config(AppState)
-  .run(['$state', ($state) => $state.go('app.home')])
+  .run(['$state', ($state) => $state.go('app.KPCREF')])
   .name;
 
 

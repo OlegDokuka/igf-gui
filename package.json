@@ -2,7 +2,7 @@
   "name": "evernote-reminder",
   "version": "0.0.0",
   "description": "Simple desktop application created to remind about uncomplited tasks in Evernote",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "postinstall": "npm run typings && npm run build",
     "typings": "./node_modules/.bin/typings i",

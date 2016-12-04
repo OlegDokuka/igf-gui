@@ -1,1 +1,4 @@
-<div>Hello</div>
+<select ng-model="$ctrl.test1" ng-options="idx as choice for (idx, choice) in $ctrl.scenario.test1"/>
+</select>
+
+<button ng-click="$ctrl.process()">process</button>
