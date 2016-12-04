@@ -2,12 +2,12 @@
   "name": "evernote-reminder",
   "dependencies": {},
   "globalDependencies": {
-    "angular": "registry:dt/angular#1.5.0+20160922195358",
+    "angular": "registry:dt/angular#1.5.0+20161101124950",
     "angular-animate": "registry:dt/angular-animate#1.5.0+20160709061515",
-    "angular-material": "registry:dt/angular-material#1.1.0-rc5.0+20160923175937",
+    "angular-material": "registry:dt/angular-material#1.1.0-rc5.0+20161028134338",
     "jquery": "registry:dt/jquery#1.10.0+20160929162922",
-    "lodash": "registry:dt/lodash#4.14.0+20161004174455",
-    "node": "registry:dt/node#6.0.0+20161006230116",
-    "node-webkit": "registry:dt/node-webkit#0.0.0+20160726164208"
+    "lodash": "registry:dt/lodash#4.14.0+20161110215204",
+    "node": "registry:dt/node#6.0.0+20161121110008",
+    "nw.js": "registry:dt/nw.js#0.13.0+20160831020201"
   }
 }
