@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "description": "Simple desktop application created to remind about uncomplited tasks in Evernote",
   "main": "index.html",
+  "window": {
+    "toolbar": true
+  },
   "scripts": {
+    "start": "nw --remote-debugging-port=8080",
     "postinstall": "npm run typings && npm run build",
     "typings": "./node_modules/.bin/typings i",
     "tsc": "./node_modules/.bin/tsc",
@@ -49,6 +53,7 @@
     "html-loader": "latest",
     "file-loader": "latest",
     "url-loader": "latest",
-    "webpack": "latest"
+    "webpack": "latest",
+    "nw": "latest"
   }
 }

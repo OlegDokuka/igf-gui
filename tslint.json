@@ -8,11 +8,6 @@
             4
         ],
         "label-position": true,
-        "label-undefined": true,
-        "no-unused-variable": [
-            true,
-            "check-parameters"
-        ],
         "no-unused-expression": true,
         "max-line-length": [
             true,
@@ -25,13 +20,11 @@
         ],
         "no-construct": true,
         "no-debugger": true,
-        "no-duplicate-key": true,
         "no-duplicate-variable": true,
         "no-empty": true,
         "no-eval": true,
         "no-string-literal": true,
         "no-trailing-whitespace": true,
-        "no-unreachable": true,
         "one-line": [
             true,
             "check-open-brace",

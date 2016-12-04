@@ -15,7 +15,7 @@ export class KPCREFService {
 
     private doProcess(data: Array<number>): void {
         const bat = spawn('cmd.exe', ['/c', 'KPCREF']);
-        bat.stdout.on('data', (data) => {
+        bat.stdout.on('data', (data: any) => {
             console.log(data.toString('utf8'));
         });
 
@@ -27,7 +27,7 @@ export class KPCREFService {
             console.log(`Child exited with code ${code}`);
         });
 
-        data.forEach(d => bat.stdin.write(d, () => { }))
+        data.forEach(d => bat.stdin.write(d, () => { }));
 
     }
 }
